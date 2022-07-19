@@ -1,0 +1,95 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "354dda32d89fc8cd4f5c46487f64957d355f53d8",
+        "version" : "5.6.1"
+      }
+    },
+    {
+      "identity" : "fontawesomeswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onmyway133/FontAwesomeSwiftUI",
+      "state" : {
+        "revision" : "112baccbd390338dda124f26cd395e8cbd13ecda",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "fuse-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krisk/fuse-swift.git",
+      "state" : {
+        "revision" : "26ba868691b2d8b7bf2b1322951eb591be70ccca",
+        "version" : "1.4.0"
+      }
+    },
+    {
+      "identity" : "multipartform",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/davbeck/MultipartForm.git",
+      "state" : {
+        "revision" : "c91979ea956a360bf84f0cc480afbcc7c946c753",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core",
+      "state" : {
+        "revision" : "33dd84212b64cd0788590a93be0dde64d2869abb",
+        "version" : "11.14.0"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "7d7271481b293ebc39798d29ef1fee8aac20b708"
+      }
+    },
+    {
+      "identity" : "stringmetric.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/autozimu/StringMetric.swift.git",
+      "state" : {
+        "revision" : "ac08419f609e53636bd2d5d140d95d1d14960d6a",
+        "version" : "0.3.2"
+      }
+    },
+    {
+      "identity" : "swiftannoy",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jbadger3/SwiftAnnoy",
+      "state" : {
+        "revision" : "8eeea249ead49f6f8db8e76bf66abce49cc5b856",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swiftsoup",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scinfu/SwiftSoup.git",
+      "state" : {
+        "revision" : "41e7c263fb8c277e980ebcb9b0b5f6031d3d4886",
+        "version" : "2.4.2"
+      }
+    },
+    {
+      "identity" : "swiftui-introspect",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/siteline/SwiftUI-Introspect.git",
+      "state" : {
+        "revision" : "f2616860a41f9d9932da412a8978fec79c06fe24",
+        "version" : "0.1.4"
+      }
+    }
+  ],
+  "version" : 2
+}

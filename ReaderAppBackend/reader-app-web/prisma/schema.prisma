@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model bookmarks {
+  id        String  @id @db.VarChar @default(cuid())
+  url         String? @db.VarChar
+  title       String? @db.VarChar
+  type        String? @db.VarChar
+  description String? @db.VarChar
+  owner_id    String? @db.VarChar
+  User        User?   @relation(fields: [owner_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@index([id], map: "ix_bookmarks_id")
+}
+
+model User {
+  id            String      @id @default(cuid()) @db.VarChar
+  name          String?     @db.VarChar
+  refresh_token String?     @db.VarChar
+  email         String?     @unique(map: "ix_User_email") @db.VarChar
+  emailVerified DateTime?   @db.Timestamp(6)
+  image         String?     @db.VarChar
+  given_name    String?     @db.VarChar
+  family_name   String?     @db.VarChar
+  bookmarks     bookmarks[]
+  accounts      Account[]
+  sessions      Session[]
+
+  @@index([id], map: "ix_User_id")
+}
+
+model Account {
+  id                 String  @id @default(cuid())
+  userId             String
+  type               String
+  provider           String
+  providerAccountId  String
+  refresh_token      String?  @db.Text
+  access_token       String?  @db.Text
+  expires_at         Int?
+  token_type         String?
+  scope              String?
+  id_token           String?  @db.Text
+  session_state      String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}

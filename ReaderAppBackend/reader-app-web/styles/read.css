@@ -1,0 +1,52 @@
+
+
+
+.ltx_page_main{
+    @apply px-8 lg:px-16 mt-16 max-w-full lg:max-w-full text-lg font-serif inline-block;
+}
+
+.ltx_figure {
+    @apply overflow-scroll;
+}
+
+.ltx_personname{
+    @apply lg:text-xl font-bold;
+}
+
+.ltx_author_notes{
+    @apply block;
+}
+
+.ltx_title {
+    @apply text-2xl font-bold;
+}
+.ltx_authors{
+    @apply mb-4 mt-2 lg:mb-4;
+}
+.ltx_section{
+    @apply my-4 lg:my-8;
+}
+.ltx_p{
+    @apply mb-2 overflow-scroll;
+}
+.ltx_ref {
+    @apply text-blue-400;
+}
+.ltx_equation {
+    @apply overflow-scroll;
+}
+.ltx_engrafo_equation_container{
+    @apply overflow-scroll;
+}
+.ltx_table{
+    @apply overflow-scroll;
+}
+.ltx_caption{
+    @apply text-sm;
+}
+.ltx_title_subsection{
+    @apply my-2
+}
+.ltx_title_document{
+    @apply text-xl lg:text-3xl font-bold;
+}

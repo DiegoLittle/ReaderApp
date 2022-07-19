@@ -1,0 +1,31 @@
+button {
+    height: 30px;
+    width: 30px;
+    outline: none;
+    margin: 10px;
+    border: none;
+    border-radius: 2px;
+  }
+  
+  button.current {
+    box-shadow: 0 0 0 2px white,
+                0 0 0 4px black;
+  }
+
+.title {
+  border-radius: 4px;
+  padding:2px;
+  border: 2px solid #ccc;
+  width:200px;
+}
+
+.save {
+  border-radius: 4px;
+  padding:3px;
+  border: 2px solid #ccc;
+  width:auto;
+  cursor: pointer;
+}
+.save:hover{
+  background-color: #ccc;
+}
